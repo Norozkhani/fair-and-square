@@ -9,8 +9,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-      <h1>dawdawd</h1>
-
         {children}</body>
     </html>
   )
