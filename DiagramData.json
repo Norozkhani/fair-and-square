@@ -1,0 +1,8 @@
+{
+	"genderreport": [
+		{ "gender": "male", "amount": 3 },
+		{ "gender": "female", "amount": 5 },
+		{ "gender": "other", "amount": 8 },
+		{ "gender": "Perfer not to say", "amount": 15 }
+	]
+}
