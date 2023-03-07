@@ -30,7 +30,8 @@ justify-content-center align-items-center">
 					data-bs-target="#exampleModal">
 					Launch demo modal cheking
 					whether I succeeded in
-					cloning(sammani)
+					cloning(sammani) testing the
+					new branch
 				</button>
 
 				<div
