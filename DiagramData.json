@@ -1,8 +1,14 @@
 {
-	"genderreport": [
-		{ "gender": "male", "amount": 3 },
-		{ "gender": "female", "amount": 5 },
-		{ "gender": "other", "amount": 8 },
-		{ "gender": "Perfer not to say", "amount": 15 }
-	]
+	"gender": [
+		{ "catagory": "male", "amount": 3 },
+		{ "catagory": "female", "amount": 5 },
+		{ "catagory": "other", "amount": 8 },
+		{ "catagory": "Perfer not to say", "amount": 15 }
+	],
+	"religion": [
+		{ "catagory": "shintoism", "amount": 3 },
+		{ "catagory": "Perfer not to say", "amount": 9 },
+		{ "catagory": "other", "amount": 15 }
+	],
+	"sexuality": [{ "catagory": "shintoism", "amount": 3 }]
 }
