@@ -8,7 +8,14 @@
 	"religion": [
 		{ "catagory": "shintoism", "amount": 3 },
 		{ "catagory": "Perfer not to say", "amount": 9 },
-		{ "catagory": "other", "amount": 15 }
+		{ "catagory": "other", "amount": 15 },
+		{ "catogory": "Perfer not to say", "amount": 7 }
+
 	],
-	"sexuality": [{ "catagory": "shintoism", "amount": 3 }]
+	"sexuality": [
+		{ "catagory": "shintoism", "amount": 3 },
+		{ "catagory": "homosexual", "amount": 10 },
+		{ "catagory": "Asexual", "amount": 5 },
+		{ "catogory": "Perfer not to say", "amount": 12 }
+	]
 }
