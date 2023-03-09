@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Chart } from "chart.js";
 import DATA from "../../../DiagramData.json";
+import styles from "./chart.module.css";
 function Example({ toggleHandler }) {
   const catagory = DATA[toggleHandler].map((elem) => {
     return elem.catagory;
@@ -19,11 +20,29 @@ function Example({ toggleHandler }) {
           {
             data: amount,
             label: catagory,
-            borderColor: "rgb(109, 253, 181)",
-            backgroundColor: ["#3A1078", "#4E31AA", "#2F58CD", "#3795BD"],
+            backgroundColor: [
+              "#3A1078",
+              "#4E31AA",
+              "#2F58CD",
+              "#3795BD",
+              "#307383",
+              "#4DB892",
+            ],
             borderWidth: 1,
+            barThickness: 35,
           },
         ],
+      },
+      options: {
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true,
+              },
+            },
+          ],
+        },
       },
     });
   }, [toggleHandler]);
@@ -31,10 +50,10 @@ function Example({ toggleHandler }) {
   return (
     <>
       {/* Bar chart */}
-      <h1 className="">Bar Chart</h1>
-      <div className="">
-        <div className="">
-          <canvas id="myChart"></canvas>
+      <div className=" w-50 mx-auto my-auto">
+        <h1 className="">Bar Chart</h1>
+        <div>
+          <canvas className={styles.Chart} id="myChart"></canvas>
         </div>
       </div>
     </>

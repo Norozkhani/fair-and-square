@@ -1,14 +1,21 @@
 {
-	"gender": [
-		{ "catagory": "male", "amount": 3 },
-		{ "catagory": "female", "amount": 5 },
-		{ "catagory": "other", "amount": 8 },
-		{ "catagory": "Perfer not to say", "amount": 15 }
-	],
-	"religion": [
-		{ "catagory": "shintoism", "amount": 3 },
-		{ "catagory": "Perfer not to say", "amount": 9 },
-		{ "catagory": "other", "amount": 15 }
-	],
-	"sexuality": [{ "catagory": "shintoism", "amount": 3 }]
+  "gender": [
+    { "catagory": "male", "amount": 3 },
+    { "catagory": "female", "amount": 5 },
+    { "catagory": "other", "amount": 8 },
+    { "catagory": "Perfer not to say", "amount": 15 }
+  ],
+  "religion": [
+    { "catagory": "shintoism", "amount": 3 },
+    { "catagory": "Islam", "amount": 9 },
+    { "catagory": "Christianity", "amount": 7 },
+    { "catagory": "other", "amount": 7 },
+    { "catogory": "Perfer not to say", "amount": 15 }
+  ],
+  "sexuality": [
+    { "catagory": "heterosexual", "amount": 3 },
+    { "catagory": "homosexual", "amount": 9 },
+    { "catagory": "Asexual", "amount": 2 },
+    { "catogory": "Perfer not to say", "amount": 15 }
+  ]
 }
