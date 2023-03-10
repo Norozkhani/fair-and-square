@@ -8,8 +8,6 @@ import "./globals.css";
 import { useEffect } from "react";
 import BarChart from "./components/BarChart";
 
-import { useState } from "react";
-
 const inter = Inter({
 	subsets: ["latin"],
 });
