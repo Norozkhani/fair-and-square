@@ -1,24 +1,22 @@
 /** @format */
 
-"use client";
-import React from "react";
 import { useEffect } from "react";
 import Card from "react-bootstrap/Card";
-import Toggle from "./Toggle";
+import DATA from "../../../TraitsData.json";
 
-function TextExample() {
+function TextExample({ xyz }) {
+	const someText = DATA[xyz].someText;
+	const moreInfo = DATA[xyz].moreInfo;
+	console.log(someText);
+
 	return (
 		<Card style={{ width: "43rem" }}>
 			<Card.Body>
-				<Card.Title>Traits</Card.Title>
 				<Card.Text>
-					Some quick example text to
-					build on the card title and
-					make up the bulk of the card's
-					content. To learn more :
+					{someText}
 					<span>
-						<Card.Link href="#">
-							Click Here
+						<Card.Link>
+							{moreInfo}
 						</Card.Link>
 					</span>
 				</Card.Text>

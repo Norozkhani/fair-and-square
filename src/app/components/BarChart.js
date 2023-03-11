@@ -75,7 +75,10 @@ function Example() {
 					<canvas
 						className={styles.Chart}
 						id="myChart"></canvas>
-					<TraitsCard />
+
+					<TraitsCard
+						xyz={toggleTrait}
+					/>
 				</div>
 			</div>
 		</>
