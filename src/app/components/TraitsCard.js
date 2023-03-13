@@ -1,8 +1,8 @@
 /** @format */
 
-import { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import DATA from "../../../TraitsData.json";
+import styles from "./TraitsCard.module.css";
 
 function TraitsCard({ clickedTrait }) {
 	const someText =
@@ -12,7 +12,7 @@ function TraitsCard({ clickedTrait }) {
 	console.log(someText);
 
 	return (
-		<Card style={{ width: "43rem" }}>
+		<Card className={styles.traitsCard}>
 			<Card.Body>
 				<Card.Text>
 					{someText}
