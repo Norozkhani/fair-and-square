@@ -12,6 +12,7 @@ import Sidebar from "./components/Sidebar";
 const poppins = Poppins({
   weight: ["400", "700"],
   subsets: ["latin"],
+
 });
 
 export default function Home() {
