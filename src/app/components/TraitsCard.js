@@ -4,9 +4,11 @@ import { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import DATA from "../../../TraitsData.json";
 
-function TextExample({ xyz }) {
-	const someText = DATA[xyz].someText;
-	const moreInfo = DATA[xyz].moreInfo;
+function TraitsCard({ clickedTrait }) {
+	const someText =
+		DATA[clickedTrait].someText;
+	const moreInfo =
+		DATA[clickedTrait].moreInfo;
 	console.log(someText);
 
 	return (
@@ -25,4 +27,4 @@ function TextExample({ xyz }) {
 	);
 }
 
-export default TextExample;
+export default TraitsCard;
