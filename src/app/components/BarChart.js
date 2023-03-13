@@ -25,18 +25,10 @@ import DATA from "../../../DiagramData.json";
 import options from "./Options";
 import styles from "./chart.module.css";
 import Toggle from "./Toggle";
+import TraitsCard from "./TraitsCard"
 function ChartBar() {
 	const [toggleTrait, setToggleTrait] = useState("gender");
 	const catagoryLabel = DATA[toggleTrait].map((elem) => {
-import TraitsCard from "./TraitsCard";
-import { useState } from "react";
-function Example() {
-	const [toggleTrait, setToggleTrait] =
-		useState("gender");
-	console.log(toggleTrait);
-	const catagory = DATA[
-		toggleTrait
-	].map((elem) => {
 		return elem.catagory;
 	});
 	const catagoryData = DATA[toggleTrait].map((elem) => {
@@ -67,13 +59,7 @@ function Example() {
 						data={chartData}
 						options={options}
 					/>
-					<canvas
-						className={styles.Chart}
-						id="myChart"></canvas>
-
-					<TraitsCard
-						xyz={toggleTrait}
-					/>
+					<TraitsCard xyz={toggleTrait}/>
 				</div>
 			</div>
 		</>
