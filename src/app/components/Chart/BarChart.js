@@ -21,11 +21,11 @@ ChartJS.register(
 
 import { Bar } from "react-chartjs-2";
 import { useState } from "react";
-import DATA from "../../../DiagramData.json";
+import DATA from "../../../../DiagramData.json";
 import options from "./Options";
 import styles from "./chart.module.css";
 import Toggle from "./Toggle";
-import TraitsCard from "./TraitsCard"
+import TraitsCard from "../TraitsCard"
 function ChartBar() {
 	const [toggleTrait, setToggleTrait] = useState("gender");
 	const catagoryLabel = DATA[toggleTrait].map((elem) => {
