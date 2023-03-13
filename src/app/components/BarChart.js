@@ -5,6 +5,7 @@ import { Chart } from "chart.js";
 import DATA from "../../../DiagramData.json";
 import styles from "./chart.module.css";
 import Toggle from "./Toggle";
+import TraitsCard from "./TraitsCard";
 import { useState } from "react";
 function Example() {
 	const [toggleTrait, setToggleTrait] =
@@ -74,6 +75,10 @@ function Example() {
 					<canvas
 						className={styles.Chart}
 						id="myChart"></canvas>
+
+					<TraitsCard
+						xyz={toggleTrait}
+					/>
 				</div>
 			</div>
 		</>
