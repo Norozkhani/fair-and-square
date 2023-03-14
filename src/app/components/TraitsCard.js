@@ -1,16 +1,18 @@
 /** @format */
 
-import { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import DATA from "../../../TraitsData.json";
+import styles from "./TraitsCard.module.css";
 
-function TextExample({ xyz }) {
-	const someText = DATA[xyz].someText;
-	const moreInfo = DATA[xyz].moreInfo;
+function TraitsCard({ clickedTrait }) {
+	const someText =
+		DATA[clickedTrait].someText;
+	const moreInfo =
+		DATA[clickedTrait].moreInfo;
 	console.log(someText);
 
 	return (
-		<Card style={{ width: "43rem" }}>
+		<Card className={styles.traitsCard}>
 			<Card.Body>
 				<Card.Text>
 					{someText}
@@ -25,4 +27,4 @@ function TextExample({ xyz }) {
 	);
 }
 
-export default TextExample;
+export default TraitsCard;

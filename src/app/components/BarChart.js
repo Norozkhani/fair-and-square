@@ -20,18 +20,23 @@ ChartJS.register(
 );
 
 import { Bar } from "react-chartjs-2";
-import { useState } from "react";
 import DATA from "../../../DiagramData.json";
 import options from "./Options";
 import styles from "./chart.module.css";
 import Toggle from "./Toggle";
-import TraitsCard from "./TraitsCard"
-function ChartBar() {
-	const [toggleTrait, setToggleTrait] = useState("gender");
-	const catagoryLabel = DATA[toggleTrait].map((elem) => {
+
+function ChartBar({
+	toggleTrait,
+	setToggleTrait,
+}) {
+	const catagoryLabel = DATA[
+		toggleTrait
+	].map((elem) => {
 		return elem.catagory;
 	});
-	const catagoryData = DATA[toggleTrait].map((elem) => {
+	const catagoryData = DATA[
+		toggleTrait
+	].map((elem) => {
 		return elem.amount;
 	});
 	const chartData = {
@@ -52,14 +57,18 @@ function ChartBar() {
 					<h1>Bar Chart</h1>
 				</div>
 
-				<Toggle toggleTrait={toggleTrait} setToggleTrait={setToggleTrait} />
+				<Toggle
+					toggleTrait={toggleTrait}
+					setToggleTrait={
+						setToggleTrait
+					}
+				/>
 				<div>
 					<Bar
 						className={`${styles.Chart}`}
 						data={chartData}
 						options={options}
 					/>
-					<TraitsCard xyz={toggleTrait}/>
 				</div>
 			</div>
 		</>
