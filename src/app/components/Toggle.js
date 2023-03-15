@@ -21,7 +21,7 @@ const Toggle = ({ toggleTrait, setToggleTrait }) => {
 								onClick={(event) => setToggleTrait(event.target.innerHTML.toLowerCase())}
 								className="dropdown-item"
 							>
-								gender
+								Gender
 							</a>
 						</li>
 						<li>
@@ -29,7 +29,7 @@ const Toggle = ({ toggleTrait, setToggleTrait }) => {
 								onClick={(event) => setToggleTrait(event.target.innerHTML.toLowerCase())}
 								className="dropdown-item"
 							>
-								religion
+								Religion
 							</a>
 						</li>
 						<li>
@@ -37,7 +37,7 @@ const Toggle = ({ toggleTrait, setToggleTrait }) => {
 								onClick={(event) => setToggleTrait(event.target.innerHTML.toLowerCase())}
 								className="dropdown-item"
 							>
-								sexuality
+								Sexuality
 							</a>
 						</li>
 					</ul>
