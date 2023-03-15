@@ -12,7 +12,9 @@ function TraitsCard({ clickedTrait }) {
 	console.log(someText);
 
 	return (
-		<Card className={styles.traitsCard}>
+		<Card
+			class="text-center"
+			className={styles.traitsCard}>
 			<Card.Body>
 				<Card.Text>
 					{someText}
