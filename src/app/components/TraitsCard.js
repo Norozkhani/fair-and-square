@@ -7,20 +7,20 @@ import styles from "./TraitsCard.module.css";
 
 function TraitsCard({ toggleTrait }) {
 	console.log(toggleTrait)
-	const someText =
-		DATA[toggleTrait].someText;
-	const moreInfo =
-		DATA[toggleTrait].moreInfo;
+	const catagoryText =
+		DATA[toggleTrait].catagoryText;
+	const catagoryLink =
+		DATA[toggleTrait].catagoryLink;
 
 	return (
 		<Card
 			className={styles.traitsCard}>
 			<Card.Body>
 				<Card.Text>
-					{someText}
+					{catagoryText}
 					<span>
 						<Card.Link>
-							{moreInfo}
+							{catagoryLink}
 						</Card.Link>
 					</span>
 				</Card.Text>
