@@ -18,7 +18,7 @@ const Toggle = ({ toggleTrait, setToggleTrait }) => {
 					<ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 						<li>
 							<a
-								onClick={(event) => setToggleTrait(event.target.innerHTML)}
+								onClick={(event) => setToggleTrait(event.target.innerHTML.toLowerCase())}
 								className="dropdown-item"
 							>
 								gender
@@ -26,7 +26,7 @@ const Toggle = ({ toggleTrait, setToggleTrait }) => {
 						</li>
 						<li>
 							<a
-								onClick={(event) => setToggleTrait(event.target.innerHTML)}
+								onClick={(event) => setToggleTrait(event.target.innerHTML.toLowerCase())}
 								className="dropdown-item"
 							>
 								religion
@@ -34,7 +34,7 @@ const Toggle = ({ toggleTrait, setToggleTrait }) => {
 						</li>
 						<li>
 							<a
-								onClick={(event) => setToggleTrait(event.target.innerHTML)}
+								onClick={(event) => setToggleTrait(event.target.innerHTML.toLowerCase())}
 								className="dropdown-item"
 							>
 								sexuality

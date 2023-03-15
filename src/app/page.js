@@ -28,7 +28,7 @@ export default function Home() {
 				setToggleTrait={setToggleTrait}
 			/>
 			<TraitsCard
-				clickedTrait={toggleTrait}
+				toggleTrait={toggleTrait}
 			/>
 		</>
 	);

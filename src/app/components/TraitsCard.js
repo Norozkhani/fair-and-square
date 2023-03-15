@@ -1,19 +1,19 @@
 /** @format */
 
+"use client"
 import Card from "react-bootstrap/Card";
 import DATA from "../../../TraitsData.json";
 import styles from "./TraitsCard.module.css";
 
-function TraitsCard({ clickedTrait }) {
+function TraitsCard({ toggleTrait }) {
+	console.log(toggleTrait)
 	const someText =
-		DATA[clickedTrait].someText;
+		DATA[toggleTrait].someText;
 	const moreInfo =
-		DATA[clickedTrait].moreInfo;
-	console.log(someText);
+		DATA[toggleTrait].moreInfo;
 
 	return (
 		<Card
-			class="text-center"
 			className={styles.traitsCard}>
 			<Card.Body>
 				<Card.Text>
