@@ -11,7 +11,7 @@ function sideBar() {
     <>
       <div className="container-fluid position-absolute top-0 start-0">
         <div className="row">
-          <div className="col-auto min-vh-100">
+          <div className="col-auto min-vh-100 mw-25 bg-white">
             <div>
               <Image
                 src="/company-logo.svg"

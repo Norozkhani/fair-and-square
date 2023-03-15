@@ -1,6 +1,6 @@
 {
   "gender": [
-    { "catagory": "male", "amount": 3 },
+    { "catagory": "male", "amount": 5 },
     { "catagory": "female", "amount": 5 },
     { "catagory": "other", "amount": 8 },
     { "catagory": "Perfer not to say", "amount": 15 }
@@ -13,9 +13,9 @@
     { "catogory": "Perfer not to say", "amount": 15 }
   ],
   "sexuality": [
-    { "catagory": "heterosexual", "amount": 3 },
+    { "catagory": "heterosexual", "amount": 2 },
     { "catagory": "homosexual", "amount": 9 },
     { "catagory": "Asexual", "amount": 2 },
     { "catogory": "Perfer not to say", "amount": 15 }
   ]
-} 
+}
