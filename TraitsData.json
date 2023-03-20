@@ -1,16 +1,16 @@
 {
 	"gender": {
 		"catagoryText": "  This trait is not biological sex, we refer to gender identity. to learn more click here ",
-		"catagoryLink": "https://en.wikipedia.org/wiki/Gender"
+		"catagoryLink": " "
 	},
 
 	"religion": {
 		"catagoryText": "describe .... ",
-		"catagoryLink": "https://en.wikipedia.org/wiki/List_of_religions_and_spiritual_traditions"
+		"catagoryLink": " "
 	},
 
 	"sexuality": {
 		"catagoryText": " a paragraph about...",
-		"catagoryLink": "https://en.wikipedia.org/wiki/Sexual_orientation#:~:text=Sexual%20orientation%20is%20traditionally%20defined,of%20a%20traditional%20sexual%20orientation."
+		"catagoryLink": " "
 	}
 }
