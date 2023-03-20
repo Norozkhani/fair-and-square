@@ -9,7 +9,7 @@ import Image from "next/image";
 function sideBar() {
   return (
     <>
-      <div className="container-fluid position-absolute top-0 start-0">
+      <div className=" position-absolute top-0 start-0">
         <div className="row">
           <div className="col-auto min-vh-100 bg-white">
             <div>
