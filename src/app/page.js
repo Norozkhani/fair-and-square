@@ -23,13 +23,17 @@ export default function Home() {
 	}, []);
 	return (
 		<>
+		<div className="d-flex justify-content-center row">
 			<BarChart
 				toggleTrait={toggleTrait}
 				setToggleTrait={setToggleTrait}
 			/>
+			<div className="">
 			<TraitsCard
 				toggleTrait={toggleTrait}
 			/>
+			</div>
+			</div>
 		</>
 	);
 }

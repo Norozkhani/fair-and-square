@@ -1,7 +1,9 @@
+.traitsCard {
+	background-color: #f7f9fb;
+	border-radius: 10px;
+}
 
-.traitsCard{
- width:  42rem;
-margin-left: 22rem;
-background-color: #f7f9fb;
-border-radius: 10px;  
+.link {
+	text-decoration: none;
+	color: #2f58cd;
 }

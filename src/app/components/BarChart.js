@@ -55,8 +55,8 @@ function ChartBar({toggleTrait, setToggleTrait}) {
 	return (
 		<>
 			<div className="w-50 mx-auto my-auto">
-				<div>
-					<h1>Bar Chart</h1>
+				<div className="p-3">
+					<h1>Statistics for company {toggleTrait}</h1>
 				</div>
 
 				<Toggle toggleTrait={toggleTrait} setToggleTrait={setToggleTrait} />
