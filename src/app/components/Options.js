@@ -5,6 +5,9 @@ const options = {
 		legend: {
 			position: "top",
 		},
+    tooltip: {
+      enabled:true
+    },
 		title: {
 			display: true,
 			text: "Trait",

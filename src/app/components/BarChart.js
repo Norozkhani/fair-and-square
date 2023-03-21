@@ -14,20 +14,55 @@ import {
 ChartJS.register(
 	BarElement,
 	ArcElement,
-
+	Tooltip,
 	LinearScale,
 	Title,
 	Legend,
 	CategoryScale
 );
 
-import { Bar, Pie } from "react-chartjs-2";
+import { Bar, Pie, getElementAtEvent } from "react-chartjs-2";
 import DATA from "../../../DiagramData.json";
 import options from "./Options";
-import {data, config} from "./PieOptions";
+import { config } from "./PieOptions";
 import styles from "./chart.module.css";
 import Toggle from "./Toggle";
+import { useRef, useState } from "react";
 function ChartBar({ toggleTrait, setToggleTrait }) {
+	const[dataset, setDataset] = useState(0)
+
+	const records = {
+		datapoints: [[9, 5,2,6],[1, 5,0,0,0],[2, 5,3,5,7],[10, 5,1,2,3],[3, 5,1,3,6],[3, 5],[6, 5]],
+	};
+	
+	const data = {
+		labels: ["Pansexual", "Heterosexual",'Homoosexual', 'Perfer not to say'],
+		datasets: [
+			{
+				label: "Gender",
+				data: records.datapoints[dataset],
+				backgroundColor: [
+					"rgba(255, 26, 104, 0.2)",
+					"rgba(54, 162, 235, 0.2)",
+					"rgba(255, 206, 86, 0.2)",
+					"rgba(75, 192, 192, 0.2)",
+					"rgba(153, 102, 255, 0.2)",
+					"rgba(255, 159, 64, 0.2)",
+					"rgba(0, 0, 0, 0.2)",
+				],
+				borderColor: [
+					"rgba(255, 26, 104, 1)",
+					"rgba(54, 162, 235, 1)",
+					"rgba(255, 206, 86, 1)",
+					"rgba(75, 192, 192, 1)",
+					"rgba(153, 102, 255, 1)",
+					"rgba(255, 159, 64, 1)",
+					"rgba(0, 0, 0, 1)",
+				],
+				borderWidth: 1,
+			},
+		],
+	};
 	const catagoryLabel = DATA[toggleTrait].map((elem) => {
 		return elem.catagory;
 	});
@@ -56,7 +91,13 @@ function ChartBar({ toggleTrait, setToggleTrait }) {
 		],
 	};
 
-console.log(config)
+	const chartRef = useRef();
+	const clickHandler = (event) => {
+		if (getElementAtEvent(chartRef.current, event).length > 0) {
+			const dataPoint = getElementAtEvent(chartRef.current, event)[0].index
+			setDataset(dataPoint)
+		}
+	};
 	return (
 		<>
 			<div className="w-50 mx-auto my-auto">
@@ -68,15 +109,13 @@ console.log(config)
 				{catagoryData.length >= 5 && (
 					<div>
 						<Bar
+							onClick={clickHandler}
 							className={`${styles.Chart}`}
 							data={chartData}
 							options={options}
+							ref={chartRef}
 						/>
-						<Pie
-							className={`${styles.Chart}`}
-							data={data}
-							options={config}
-						/>
+						<Pie className={`${styles.Chart}`} data={data} options={config} />
 					</div>
 				)}
 				{catagoryData.length < 5 && (

@@ -13,9 +13,9 @@
     { "catagory": "other", "amount": 7 },
     { "catogory": "Perfer not to say", "amount": 15 }
   ],
-  "sexuality": [
-    { "catagory": "heterosexual", "amount": 3 },
-    { "catagory": "homosexual", "amount": 9 },
-    { "catagory": "Asexual", "amount": 2 }
+  "nationality": [
+    { "catagory": "swedish", "amount": 3 },
+    { "catagory": "danish", "amount": 9 },
+    { "catagory": "french", "amount": 2 }
   ]
 } 
