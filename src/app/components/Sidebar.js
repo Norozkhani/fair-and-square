@@ -9,7 +9,7 @@ import Image from "next/image";
 function sideBar() {
   return (
     <>
-      <div className=" position-absolute top-0 start-0">
+      <div className=" position-fixed top-0 start-0">
         <div className="row">
           <div className="col-auto min-vh-100 bg-white px-5 py-3 shadow-sm rounded">
             <div>
