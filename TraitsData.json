@@ -1,16 +1,16 @@
 {
-	"gender": {
-		"catagoryText": "  This trait is not biological sex, we refer to gender identity. to learn more ",
-		"catagoryLink": "https://www.instagram.com/swedentopteam/?hl=en"
-	},
+  "gender": {
+    "catagoryText": "  This trait is not biological sex, we refer to gender identity. to learn more ",
+    "catagoryLink": ""
+  },
 
-	"religion": {
-		"catagoryText": "describe .... ",
-		"catagoryLink": " "
-	},
+  "religion": {
+    "catagoryText": "describe .... ",
+    "catagoryLink": " "
+  },
 
-	"nationality": {
-		"catagoryText": " a paragraph about...",
-		"catagoryLink": " "
-	}
+  "nationality": {
+    "catagoryText": " a paragraph about...",
+    "catagoryLink": " "
+  }
 }
