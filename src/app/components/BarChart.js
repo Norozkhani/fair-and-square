@@ -36,7 +36,7 @@ function ChartBar({ toggleTrait, setToggleTrait }) {
 	};
 	
 	const data = {
-		labels: ["Pansexual", "Heterosexual",'Homoosexual', 'Perfer not to say'],
+		labels: ["Pansexual", "Heterosexual",'Homoosexual', 'Asexual', 'Perfer not to say'],
 		datasets: [
 			{
 				label: "Gender",
